@@ -732,8 +732,8 @@
       "displayType": "",
       "jsonPath": "",
       "jsonPathHint": "",
-      "label": "",
-      "unit": "",
+      "label": "Étiquette",
+      "unit": "Unité",
       "mappings": "",
       "tablePath": "",
       "tablePathHint": "",
@@ -755,14 +755,14 @@
       "striped": "",
       "compact": "",
       "maxHeight": "",
-      "color": "",
+      "color": "Couleur",
       "buttonLabel": "",
       "buttonColor": "",
-      "confirmText": "",
+      "confirmText": "Texte de confirmation",
       "confirmTextHint": "",
-      "successMessage": "",
+      "successMessage": "Message de réussite",
       "successMessageHint": "",
-      "enabled": "",
+      "enabled": "Activé",
       "template": {
         "label": "",
         "description": ""
@@ -1017,12 +1017,13 @@
       "timetable": "",
       "photoService": "",
       "documents": "",
-      "notes": "",
-      "mediaMonitoring": "",
-      "speedtest": "",
+      "notes": "Notes",
+      "mediaMonitoring": "Supervision",
+      "speedtest": "Test de débit",
       "analytics": "",
-      "mediaLibrary": "",
-      "uptimeMonitoring": ""
+      "vpn": "",
+      "mediaLibrary": "Bibliothèque de médias",
+      "uptimeMonitoring": "Surveillance des disponibilités"
     },
     "testConnection": {
       "action": {
@@ -1297,7 +1298,7 @@
           "newLabel": "Nouvelle clé privée"
         },
         "slug": {
-          "label": "",
+          "label": "Slug de la page de statut",
           "newLabel": ""
         }
       }
@@ -1412,7 +1413,10 @@
     "here": "ici",
     "iconPicker": {
       "label": "URL de l'icône :",
-      "header": "Tapez le nom ou les objets pour filtrer les icônes... Homarr recherchera les icônes {countIcons} pour vous."
+      "header": "Tapez le nom ou les objets pour filtrer les icônes... Homarr recherchera les icônes {countIcons} pour vous.",
+      "headerLoading": "",
+      "noResults": "",
+      "error": ""
     },
     "colorScheme": {
       "options": {
@@ -1464,6 +1468,7 @@
         "switchToDarkMode": "Activer le mode sombre",
         "switchToLightMode": "Activer le mode clair",
         "management": "Administration",
+        "docker": "",
         "preferences": "Vos préférences",
         "logout": "Se déconnecter",
         "login": "Connexion",
@@ -1593,7 +1598,10 @@
     },
     "menu": {
       "label": {
-        "settings": "Paramètres"
+        "settings": "Paramètres",
+        "refresh": "",
+        "options": "",
+        "actions": ""
       }
     },
     "create": {
@@ -1895,6 +1903,9 @@
       "title": "",
       "noStation": "",
       "option": {
+        "baseUrl": {
+          "label": ""
+        },
         "station": {
           "label": ""
         }
@@ -2352,6 +2363,9 @@
       "name": "Statistiques de Docker",
       "description": "Statistiques de vos conteneurs (Ce widget ne peut être ajouté qu'avec les privilèges d'administrateur)",
       "option": {
+        "columns": {
+          "label": ""
+        },
         "enableRowSorting": {
           "label": "Activer le tri des éléments"
         },
@@ -2404,6 +2418,12 @@
       "instances": {
         "title": "Instances"
       }
+    },
+    "vpn": {
+      "name": "",
+      "description": "",
+      "serviceUnavailable": "",
+      "option": {}
     },
     "ups": {
       "name": "",
@@ -2769,6 +2789,10 @@
         "showPhotoInfo": {
           "label": "Afficher les informations de la photo",
           "description": "Afficher la date et l'index de la photo en bas du diaporama"
+        },
+        "randomizePhotos": {
+          "label": "",
+          "description": ""
         }
       },
       "description": "Diaporama de photos dans votre album Immich",
@@ -3133,6 +3157,9 @@
           "provider": {
             "label": "Fournisseur"
           },
+          "providerUrl": {
+            "label": ""
+          },
           "identifier": {
             "label": "Identifiant",
             "placeholder": "Nom ou Propriétaire / Nom"
@@ -3180,6 +3207,13 @@
           "noProvider": {
             "label": "Aucun fournisseur",
             "tooltip": "Le fournisseur n'a pas pu être analysé, veuillez le définir manuellement après l'importation des images"
+          },
+          "tokens": {
+            "label": "",
+            "token": "",
+            "configured": "",
+            "notConfigured": "",
+            "save": ""
           }
         }
       },
@@ -3202,8 +3236,9 @@
           "invalidIdentifier": "Identifiant non valide",
           "noMatchingVersion": "Aucune version correspondante trouvée",
           "noReleasesFound": "Aucune publication trouvée",
-          "noProviderSeleceted": "Aucun fournisseur sélectionné",
-          "noProviderResponse": "Aucune réponse du fournisseur"
+          "noProviderSelected": "",
+          "noProviderResponse": "Aucune réponse du fournisseur",
+          "unexpected": ""
         }
       }
     },
@@ -3639,6 +3674,9 @@
       "error": {
         "internalServerError": ""
       },
+      "empty": {
+        "noSystems": ""
+      },
       "metric": {
         "cpu": "",
         "memory": "",
@@ -3712,6 +3750,9 @@
         }
       },
       "selectSystem": "",
+      "empty": {
+        "noSystems": ""
+      },
       "error": {
         "internalServerError": "",
         "liveConnectionFailed": "",
@@ -4133,6 +4174,11 @@
       "title": "Non trouvé",
       "text": "Impossible de trouver la ressource demandée"
     },
+    "error": {
+      "title": "",
+      "text": "",
+      "digest": ""
+    },
     "navbar": {
       "items": {
         "home": "Accueil",
@@ -4499,86 +4545,14 @@
             "disabled": "Désactivé"
           },
           "job": {
-            "minecraftServerStatus": {
-              "label": "État du serveur Minecraft"
-            },
-            "timetable": {
-              "label": ""
-            },
             "iconsUpdater": {
               "label": "Mise à jour des icônes"
             },
             "analytics": {
               "label": "Statistiques"
             },
-            "smartHomeEntityState": {
-              "label": "État de l'entité Maison Connectée"
-            },
             "ping": {
               "label": "Pings"
-            },
-            "mediaServer": {
-              "label": "Serveur multimédia"
-            },
-            "mediaOrganizer": {
-              "label": "Organisateurs de Médias"
-            },
-            "downloads": {
-              "label": "Téléchargements"
-            },
-            "mediaRequestStats": {
-              "label": "Statistiques des demandes de médias"
-            },
-            "mediaRequestList": {
-              "label": "Liste des demandes de médias"
-            },
-            "rssFeeds": {
-              "label": "Flux RSS"
-            },
-            "indexerManager": {
-              "label": "Gestionnaire d’indexeur"
-            },
-            "healthMonitoring": {
-              "label": "Moniteur de santé"
-            },
-            "dnsHole": {
-              "label": "Données du puit DNS"
-            },
-            "updateChecker": {
-              "label": "Vérificateur de mise à jour"
-            },
-            "mediaTranscoding": {
-              "label": "Transcodage des médias"
-            },
-            "networkController": {
-              "label": "Contrôleur réseau"
-            },
-            "refreshNotifications": {
-              "label": "Mise à jour des notifications"
-            },
-            "dockerContainers": {
-              "label": "Conteneurs Docker"
-            },
-            "firewallCpu": {
-              "label": "Processeur du pare-feu"
-            },
-            "firewallMemory": {
-              "label": "Mémoire du pare-feu"
-            },
-            "firewallVersion": {
-              "label": "Version du pare-feu"
-            },
-            "firewallInterfaces": {
-              "label": "Interfaces du pare-feu"
-            },
-            "weather": {
-              "label": "Météo"
-            },
-            "tracearr": {
-              "label": "Tracearr"
-            },
-            "umamiActiveVisitors": {
-              "label": ""
             }
           },
           "interval": {
@@ -5071,7 +5045,8 @@
       }
     },
     "error": {
-      "internalServerError": "Impossible de récupérer les conteneurs Docker"
+      "internalServerError": "Impossible de récupérer les conteneurs Docker",
+      "noColumns": ""
     }
   },
   "kubernetes": {
